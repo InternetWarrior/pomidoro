@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background{
+    background: linear-gradient(90deg, #F78CA0 0%, #F9748F 20.31%, #FD868C 66.67%, #FE9A8B 100%);
+    min-height: 100vh;
+
+}
+.backgroundBreak{
+    background: linear-gradient(180deg, #48C6EF 0%, #6F86D6 100%)
+}
+
+.container{
+    display: flex;
+    min-height: 434px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+.btnContainer{
+    display: flex;
+    top: 10%;
+
+}
+
+
+.btns{
+    min-width: 50px;
+    min-height:30px;
+    padding: 22px 47px;
+    border: 1px solid #FAFAFA;
+    border-radius: 300px;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+
+
+.hiden{
+    display: none;
+}
+
+
+
+
+/* Timer */
+.timerContainer{
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.timer{
+    display: flex;
+    font-size: 50px;
+    color: rgba(250, 250, 250, 1);
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Progress */
+svg{
+    transform: rotate(270deg);
+}
+.marker{
+    stroke: rgba(250, 250, 250, 0.1);
+    fill: none;
+    position: absolute;
+}
+.progress{
+    position: absolute;
+    stroke: rgba(250, 250, 250, 1);
+    fill: none;
+    stroke-width: 3px;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 0;
+}
+
+
+/* Setting */
+
+.settings{
+    display: block;
+    position: fixed;
+    right: 20px;
+    top:20px;
+    cursor: pointer;
+}
+
+.settingsContainer{display: none;}
+.settingsContainerON{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    background: black;
+    min-width: 400px;
+    min-height: 550px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #F78CA0 0%, #F9748F 20.31%, #FD868C 66.67%, #FE9A8B 100%),linear-gradient(0deg, #FEAFAF, #FEAFAF);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.settingsContainerONBreak{
+    background: linear-gradient(180deg, #48C6EF 0%, #6F86D6 100%)
+}
+
+.input{
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 330px;
+    height: 50px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    outline: 0px solid transparent;
+    border-width: 0;
+    padding: 10px;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+.settingsText{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+.settingsButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   
+    width: 330px;
+    margin-left: 30px;
+    
+}
+
+.settingsBTN{
+    justify-content: flex-end;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+    min-width: 100px;
+    min-height: 25px;
+    left: 694px;
+    top: 689px;
+    border: 1px solid #FAFAFA;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+    border-radius: 300px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+}
+
